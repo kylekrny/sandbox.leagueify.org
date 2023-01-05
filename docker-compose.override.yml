@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  leagueify-webapp:
+    build: 
+      context: ../leagueify/.
+      target: development
+    command: npm run dev -- --host
+    container_name: leagueify-webapp-dev
+    image: leagueify
+    ports:
+      - 80:5173
+    volumes:
+      - ../leagueify/:/usr/src/app/
