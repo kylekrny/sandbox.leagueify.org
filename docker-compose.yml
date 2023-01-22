@@ -22,6 +22,7 @@ services:
       DATABASE_URI: mongodb://leagueify-database:27017/leagueify
       DATABASE_USER: leagueify
       DATABASE_PASS: password
+      PASSWORD_PEPPER: NeverGonnaGiveYouUp
     labels:
       - traefik.enable=true
       - traefik.http.routers.leagueify-webapp.entrypoints=web
