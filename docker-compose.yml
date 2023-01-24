@@ -23,6 +23,11 @@ services:
       DATABASE_USER: leagueify
       DATABASE_PASS: password
       PASSWORD_PEPPER: NeverGonnaGiveYouUp
+      SENDER_EMAIL: noreply@leagueify.org
+      SMTP_HOST: smtp.example.com
+      SMTP_PORT: 465
+      SMTP_USER: USERNAME
+      SMTP_PASS: PASSWORD
     labels:
       - traefik.enable=true
       - traefik.http.routers.leagueify-webapp.entrypoints=web
